@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.LoginController">
+   <children>
+      <TextField fx:id="usernametxt" layoutX="186.0" layoutY="131.0" prefHeight="26.0" prefWidth="240.0" promptText="Username" />
+      <TextField fx:id="passwordtxt" layoutX="187.0" layoutY="209.0" prefHeight="26.0" prefWidth="240.0" promptText="Password" />
+      <Button layoutX="270.0" layoutY="305.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="60.0" prefWidth="60.0" style="-fx-border-radius: 80px; -fx-border-color: #deeffa; -fx-background-color: null; -fx-background-radius: 80px;" text="Login" textFill="#deeffa" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="127.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="127.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/lock.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="185.0" layoutY="9.0" prefHeight="83.0" prefWidth="200.0" style="-fx-background-color: #000428;" AnchorPane.bottomAnchor="307.8" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="215.0" layoutY="19.0" text="User Login" textFill="#deeffa">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="wrong" layoutX="179.0" layoutY="258.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="41.0" layoutY="322.0" mnemonicParsing="false" onAction="#onBack" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="Back" textFill="#deeffa" />
+   </children>
+</AnchorPane>

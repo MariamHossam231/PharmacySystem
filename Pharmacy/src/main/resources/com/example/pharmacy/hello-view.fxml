@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #000428, #004E92);;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.HelloController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-1.0" prefHeight="63.0" prefWidth="600.0" style="-fx-background-color: #000428;" AnchorPane.bottomAnchor="337.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="admin" layoutX="479.0" layoutY="18.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: #DEEFFA;" text="Admin" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="154.0" layoutY="126.0" prefHeight="248.0" prefWidth="292.0" style="-fx-border-color: #deeffa; -fx-border-radius: 20px;">
+         <children>
+            <Label layoutX="47.0" layoutY="88.0" prefHeight="20.0" prefWidth="197.0" text="Sign in or create a new account" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="62.0" layoutY="131.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #DEEFFA;" text="Log in">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="62.0" layoutY="174.0" mnemonicParsing="false" onAction="#onCreate" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #DEEFFA;" text="Create a new account">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="84.0" layoutY="48.0" style="-fx-font-weight: BOLD;" text="Welcome" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="124.0" fitWidth="112.0" layoutX="90.0" layoutY="-64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@IMG/user2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

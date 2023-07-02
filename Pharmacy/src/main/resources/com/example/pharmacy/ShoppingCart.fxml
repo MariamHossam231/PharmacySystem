@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="601.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.ShoppingCartController">
+   <children>
+      <AnchorPane layoutX="-61.0" layoutY="-67.0" prefHeight="96.0" prefWidth="601.0" style="-fx-background-color: #000428;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="176.0" layoutY="21.0" style="-fx-font-weight: bold;" text="Shop Your Meds" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="41.0" fitWidth="44.0" layoutX="125.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@IMG/pills.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="72.0" layoutY="167.0" text="voltaren" textFill="#deeffa">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Line endX="-40.600006103515625" endY="-103.4000015258789" layoutX="314.0" layoutY="208.0" startX="-40.600006103515625" startY="135.60000610351562" />
+      <Label layoutX="292.0" layoutY="127.0" text="Quantity" textFill="#deeffa" />
+      <Label layoutX="379.0" layoutY="127.0" text="price" textFill="#deeffa" />
+      <Button fx:id="Checkout" layoutX="446.0" layoutY="341.0" mnemonicParsing="false" onAction="#OnCheckout" prefHeight="27.0" prefWidth="116.0" style="-fx-background-color: #deeffa;" text="checkout" />
+      <Label fx:id="Price" layoutX="381.0" layoutY="167.0" text="15.0" textFill="#deeffa" />
+      <Line endX="76.60000610351562" endY="26.600006103515625" layoutX="358.0" layoutY="126.0" startX="-284.3999938964844" startY="26.600006103515625" />
+      <Line endX="238.39999389648438" endY="87.60000610351562" layoutX="122.0" layoutY="256.0" startX="238.39999389648438" startY="-151.39999389648438" />
+      <Label layoutX="446.0" layoutY="202.0" text="Total price:" textFill="WHITE" />
+      <Label fx:id="TotalPrice" layoutX="514.0" layoutY="197.0" text="00.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="plus" layoutX="153.0" layoutY="167.0" mnemonicParsing="false" onAction="#OnPlus" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="+" textFill="#deeffa" />
+      <Button fx:id="sub" layoutX="196.0" layoutY="167.0" mnemonicParsing="false" onAction="#OnSub" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="-" textFill="#deeffa" />
+      <Label fx:id="quantity" layoutX="308.0" layoutY="167.0" text="X0" textFill="#deeffa" />
+      <Label layoutX="71.0" layoutY="197.0" text="panadol" textFill="#deeffa">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Button fx:id="plus1" layoutX="153.0" layoutY="197.0" mnemonicParsing="false" onAction="#Onplus1" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="+" textFill="#deeffa" />
+      <Button fx:id="sub1" layoutX="196.0" layoutY="197.0" mnemonicParsing="false" onAction="#Onsub1" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="-" textFill="#deeffa" />
+      <Label fx:id="quantity1" layoutX="308.0" layoutY="197.0" text="X0" textFill="#deeffa" />
+      <Label fx:id="Price1" layoutX="381.0" layoutY="197.0" text="14.0" textFill="#deeffa" />
+      <Label layoutX="65.0" layoutY="227.0" text="augmentin" textFill="#deeffa">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Button fx:id="plus2" layoutX="153.0" layoutY="227.0" mnemonicParsing="false" onAction="#Onplus2" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="+" textFill="#deeffa" />
+      <Button fx:id="sub2" layoutX="196.0" layoutY="227.0" mnemonicParsing="false" onAction="#Onsub2" prefHeight="26.0" prefWidth="25.0" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="-" textFill="#deeffa" />
+      <Label fx:id="quantity2" layoutX="308.0" layoutY="227.0" text="X0" textFill="#deeffa" />
+      <Label fx:id="Price2" layoutX="381.0" layoutY="227.0" text="55.0" textFill="#deeffa" />
+      <Button fx:id="plus3" layoutX="153.0" layoutY="257.0" mnemonicParsing="false" onAction="#Onplus3" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="+" textFill="#deeffa" />
+      <Button fx:id="sub3" layoutX="196.0" layoutY="257.0" mnemonicParsing="false" onAction="#Onsub3" prefHeight="26.0" prefWidth="25.0" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="-" textFill="#deeffa" />
+      <Button fx:id="plus4" layoutX="153.0" layoutY="287.0" mnemonicParsing="false" onAction="#Onplus4" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="+" textFill="#deeffa" />
+      <Button fx:id="sub4" layoutX="196.0" layoutY="287.0" mnemonicParsing="false" onAction="#Onsub4" prefHeight="26.0" prefWidth="25.0" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="-" textFill="#deeffa" />
+      <Button fx:id="plus5" layoutX="153.0" layoutY="317.0" mnemonicParsing="false" onAction="#Onplus5" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="+" textFill="#deeffa" />
+      <Button fx:id="sub5" layoutX="196.0" layoutY="317.0" mnemonicParsing="false" onAction="#Onsub5" prefHeight="26.0" prefWidth="25.0" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="-" textFill="#deeffa" />
+      <Label layoutX="69.0" layoutY="257.0" text="antibiotic" textFill="#deeffa">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label layoutX="71.0" layoutY="287.0" text="claritine" textFill="#deeffa">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label layoutX="56.0" layoutY="317.0" text="antihistaminic" textFill="#deeffa">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></Label>
+      <Label fx:id="quantity3" layoutX="308.0" layoutY="257.0" prefHeight="18.0" prefWidth="14.0" text="X0" textFill="#deeffa" />
+      <Label fx:id="quantity4" layoutX="308.0" layoutY="287.0" text="X0" textFill="#deeffa" />
+      <Label fx:id="quantity5" layoutX="308.0" layoutY="317.0" text="X0" textFill="#deeffa" />
+      <Label fx:id="Price3" layoutX="381.0" layoutY="257.0" text="45.0" textFill="#deeffa" />
+      <Label fx:id="Price4" layoutX="381.0" layoutY="287.0" text="65.0" textFill="#deeffa" />
+      <Label fx:id="Price5" layoutX="381.0" layoutY="317.0" text="10.0" textFill="#deeffa" />
+      <Button fx:id="calculate" layoutX="432.0" layoutY="167.0" mnemonicParsing="false" onAction="#OnCalculate" prefHeight="26.0" prefWidth="142.0" style="-fx-background-color: #deeffa;" text="Calculate Total Price" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.CreateController">
+   <children>
+      <TextField fx:id="username" layoutX="110.0" layoutY="33.0" prefHeight="26.0" prefWidth="223.0" />
+      <TextField fx:id="password" layoutX="110.0" layoutY="76.0" prefHeight="26.0" prefWidth="223.0" />
+      <TextField fx:id="phone" layoutX="110.0" layoutY="118.0" prefHeight="26.0" prefWidth="223.0" />
+      <TextField fx:id="address" layoutX="110.0" layoutY="165.0" prefHeight="26.0" prefWidth="223.0" />
+      <TextField fx:id="age" layoutX="111.0" layoutY="209.0" prefHeight="26.0" prefWidth="223.0" />
+      <AnchorPane layoutX="384.0" layoutY="2.0" prefHeight="400.0" prefWidth="216.0" style="-fx-background-color: #000428;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="384.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="33.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="209.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="41.0">
+               <image>
+                  <Image url="@IMG/resume.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="createnew" layoutX="38.0" layoutY="251.0" mnemonicParsing="false" onAction="#onbutton" prefHeight="31.0" prefWidth="140.0" style="-fx-border-radius: 80px; -fx-border-color: #deeffa; -fx-background-color: null; -fx-background-radius: 80px;" text="Create my account" textFill="#deeffa" AnchorPane.rightAnchor="38.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+            <Button fx:id="toshopping" layoutX="38.0" layoutY="300.0" mnemonicParsing="false" onAction="#ToShoppingCart" prefHeight="31.0" prefWidth="140.0" style="-fx-border-radius: 80px; -fx-border-color: #deeffa; -fx-background-color: null; -fx-background-radius: 80px;" text="Start Shopping" textFill="#deeffa" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="warning" layoutX="132.0" layoutY="284.0" style="-fx-font-weight: BOLD;" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="36.0" layoutY="33.0" text="Username" textFill="#deeffa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="76.0" text="Password" textFill="#deeffa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="118.0" prefHeight="20.0" prefWidth="50.0" text="Phone" textFill="#deeffa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="165.0" text="Address" textFill="#deeffa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="209.0" prefHeight="20.0" prefWidth="50.0" text="Age" textFill="#deeffa">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="34.0" layoutY="335.0" mnemonicParsing="false" onAction="#onBack" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-color: #deeffa; -fx-border-radius: 80px;" text="Back" textFill="#deeffa" />
+   </children>
+</AnchorPane>

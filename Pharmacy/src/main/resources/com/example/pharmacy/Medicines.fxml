@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.MedicineController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="430.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="expired" layoutX="14.0" layoutY="303.0" mnemonicParsing="false" onAction="#onBack" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: #DEEFFA; -fx-border-radius: 80PX; -fx-background-color: null; -fx-background-radius: 80PX;" text="Back" textFill="#deeffa" />
+            <Button layoutX="95.0" layoutY="303.0" mnemonicParsing="false" onAction="#onNext" prefHeight="50.0" prefWidth="50.0" style="-fx-border-radius: 80PX; -fx-background-radius: 80PX; -fx-border-color: #DEEFFA; -fx-background-color: null;" text="Next" textFill="#deeffa" />
+            <Button layoutX="26.0" layoutY="95.0" mnemonicParsing="false" onAction="#onShowInfo" prefHeight="30.0" prefWidth="107.0" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-radius: 80px; -fx-border-color: #DEEFFA;" text="Show All Info" textFill="#deeffa">
+               <font>
+                  <Font size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="Table" layoutX="180.0" layoutY="36.0" prefHeight="333.0" prefWidth="440.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="price" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="quantaty" prefWidth="75.0" text="Quantaty" />
+            <TableColumn fx:id="description" prefWidth="107.20001220703125" text="Description" />
+            <TableColumn fx:id="date" prefWidth="96.0" text="Expiry_date" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="185.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #000428;" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="textfield" layoutX="79.0" layoutY="12.0" prefHeight="26.0" prefWidth="338.0" />
+            <Button fx:id="searchtxt" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#onSearch" style="-fx-background-color: #deeffa;" text="Search " visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

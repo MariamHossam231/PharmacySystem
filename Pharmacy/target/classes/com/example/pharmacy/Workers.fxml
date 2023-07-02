@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.WorksController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="219.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="381.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="39.0" layoutY="105.0" mnemonicParsing="false" onAction="#onbutton" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: NULL; -fx-border-color: #DEEFFA; -fx-border-radius: 80PX; -fx-background-radius: 80PX;" text="Show Data" textFill="#deeffa" />
+            <Button layoutX="84.0" layoutY="318.0" mnemonicParsing="false" onAction="#onBack" prefHeight="50.0" prefWidth="50.0" style="-fx-border-radius: 80PX; -fx-border-color: #DEEFFA; -fx-background-color: null; -fx-background-radius: 80PX;" text="Back" textFill="#deeffa" />
+         </children></AnchorPane>
+      <TableView fx:id="Tablelist" layoutX="220.0" layoutY="51.0" prefHeight="349.0" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="60.20001220703125" text="id" />
+          <TableColumn fx:id="name" prefWidth="90.20001220703125" text="Name" />
+            <TableColumn fx:id="salary" prefWidth="87.20001220703125" text="Salary" />
+            <TableColumn fx:id="workinghours" prefWidth="91.5999755859375" text="Workinghours" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="218.0" prefHeight="50.0" prefWidth="380.0" style="-fx-background-color: #000428;" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="textfield" layoutX="73.0" layoutY="12.0" prefHeight="26.0" prefWidth="302.0" />
+            <Button fx:id="search" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" onAction="#onSearch" style="-fx-background-color: #deeffa;" text="Search" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

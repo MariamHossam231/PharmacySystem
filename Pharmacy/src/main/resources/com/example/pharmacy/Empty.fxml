@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.EmptyController">
+   <children>
+      <AnchorPane prefHeight="109.0" prefWidth="600.0" style="-fx-background-color: #000428;">
+         <children>
+            <Label layoutX="253.0" layoutY="28.0" text="Sorry!" textFill="#deeffa">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="227.0" layoutY="127.0" text="Your Cart Empty...." textFill="#deeffa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Shopping" layoutX="27.0" layoutY="175.0" mnemonicParsing="false" onAction="#OnShopping" prefHeight="26.0" prefWidth="248.0" style="-fx-background-color: #deeffa;" text="⮜--Back To Shopping">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="Exit" layoutX="322.0" layoutY="175.0" mnemonicParsing="false" onAction="#OnExit" prefHeight="26.0" prefWidth="248.0" style="-fx-background-color: #deeffa;" text="Exit--⮞">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/cart.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

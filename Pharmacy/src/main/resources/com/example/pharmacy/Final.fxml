@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.FinalController">
+   <children>
+      <AnchorPane prefHeight="128.0" prefWidth="600.0" style="-fx-background-color: #000428;">
+         <children>
+            <Label layoutX="77.0" layoutY="46.0" prefHeight="54.0" prefWidth="446.0" text="Your Order will Arrive Soon!" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="241.0" layoutY="135.0" text="Thank You!" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="186.0" text="Please give Us Your Review!" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Star1" layoutX="113.0" layoutY="213.0" mnemonicParsing="false" onAction="#OnStar1" prefHeight="82.0" prefWidth="84.0" style="-fx-background-color: null;" text="★" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font></Button>
+      <Button fx:id="Star2" layoutX="190.0" layoutY="216.0" mnemonicParsing="false" onAction="#OnStar2" style="-fx-background-color: null;" text="★" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="Star3" layoutX="265.0" layoutY="216.0" mnemonicParsing="false" onAction="#OnStar3" style="-fx-background-color: null;" text="★" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="Star4" layoutX="349.0" layoutY="216.0" mnemonicParsing="false" onAction="#OnStar4" style="-fx-background-color: null;" text="★" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="Star5" layoutX="433.0" layoutY="216.0" mnemonicParsing="false" onAction="#OnStar5" style="-fx-background-color: null;" text="★" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button layoutX="281.0" layoutY="314.0" mnemonicParsing="false" onAction="#onExit" prefHeight="60.0" prefWidth="60.0" style="-fx-border-radius: 80px; -fx-border-color: #deeffa; -fx-background-radius: 80px; -fx-background-color: null;" text="Exit" textFill="#deeffa" />
+   </children>
+</AnchorPane>

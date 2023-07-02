@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.CheckoutController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="76.0" prefWidth="600.0" style="-fx-background-color: #000428;">
+         <children>
+            <Label layoutX="68.0" layoutY="11.0" style="-fx-font-weight: bold;" text="Your Receipt" textFill="#deeffa">
+               <font>
+                  <Font size="36.0" />
+               </font></Label>
+            <ImageView fitHeight="54.0" fitWidth="47.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@IMG/receipt.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="29.0" layoutY="88.0" text="You have orderd:" textFill="#deeffa">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="Order" layoutX="139.0" layoutY="87.0" prefHeight="68.0" prefWidth="234.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="127.0" layoutY="161.0" text="Total Price =" textFill="#deeffa" />
+      <Label fx:id="TotalPrice" layoutX="206.0" layoutY="161.0" prefHeight="18.0" prefWidth="169.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="29.0" layoutY="223.0" text="Choose Your Payment Method:" textFill="#deeffa">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="Confirm" layoutX="479.0" layoutY="334.0" mnemonicParsing="false" onAction="#OnConfirm" prefHeight="47.0" prefWidth="95.0" style="-fx-background-color: #deeffa;" text="Confirm!" />
+      <Button fx:id="ShowDetails" layoutX="387.0" layoutY="93.0" mnemonicParsing="false" onAction="#OnShowDetails" prefHeight="26.0" prefWidth="184.0" style="-fx-background-color: null; -fx-background-radius: 80px; -fx-border-radius: 80px; -fx-border-color: #deeffa;" text="Show My Order details" textFill="#deeffa" />
+      <Button fx:id="Back" layoutX="29.0" layoutY="334.0" mnemonicParsing="false" onAction="#OnBack" prefHeight="47.0" prefWidth="86.0" style="-fx-background-color: #deeffa;" text="Back" />
+      <Label fx:id="text" layoutX="225.0" layoutY="224.0" prefHeight="26.0" prefWidth="184.0" style="-fx-background-color: white;" />
+      <ChoiceBox fx:id="Payment" layoutX="225.0" layoutY="257.0" prefHeight="26.0" prefWidth="184.0" />
+      <Label fx:id="Warning" layoutX="118.0" layoutY="292.0" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

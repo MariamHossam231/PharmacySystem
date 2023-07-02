@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.MedicinedetailsContoller">
+   <children>
+      <TableView fx:id="Tablelist" layoutX="260.0" prefHeight="200.0" prefWidth="326.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="expired" prefWidth="132.19998168945312" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="35.0" layoutY="55.0" mnemonicParsing="false" onAction="#OnExpired" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: #deeffa;" text="Expied">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="35.0" layoutY="113.0" mnemonicParsing="false" onAction="#onRanout" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: #deeffa;" text="Ran out">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="313.0" mnemonicParsing="false" onAction="#onBack" prefHeight="50.0" prefWidth="50.0" style="-fx-border-radius: 80PX; -fx-border-color: #DEEFFA; -fx-background-color: null; -fx-background-radius: 80PX;" text="Back" textFill="#deeffa" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

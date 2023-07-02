@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #000428, #004E92);;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.HelloController">
+   <children>
+      <Button layoutX="216.0" layoutY="214.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #DEEFFA;" text="Log in">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="216.0" layoutY="266.0" mnemonicParsing="false" onAction="#onCreate" prefHeight="31.0" prefWidth="168.0" style="-fx-background-color: #DEEFFA;" text="Create a new account">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="admin" layoutX="483.0" layoutY="21.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: #DEEFFA;" text="Admin" />
+      <Label layoutX="242.0" layoutY="112.0" style="-fx-font-weight: BOLD;" text="Welcome" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="201.0" layoutY="152.0" prefHeight="20.0" prefWidth="197.0" text="Sign in or create a new account" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

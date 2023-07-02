@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #000428, #004e92);;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pharmacy.AdminFunctionController">
+   <children>
+      <Button fx:id="medicine" layoutX="176.0" layoutY="208.0" mnemonicParsing="false" onAction="#onMedicine" prefHeight="31.0" prefWidth="279.0" style="-fx-background-radius: 80PX; -fx-border-radius: 80PX; -fx-background-color: NULL; -fx-border-color: #DEEFFA;" text="Medicine" textFill="#deeffa">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button fx:id="workers" layoutX="176.0" layoutY="150.0" mnemonicParsing="false" onAction="#onWorkers" prefHeight="31.0" prefWidth="279.0" style="-fx-background-radius: 80PX; -fx-background-color: NULL; -fx-border-radius: 80PX; -fx-border-color: #DEEFFA;" text="Workers" textFill="#deeffa">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="34.0" fitWidth="51.0" layoutX="132.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/doctor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="51.0" layoutX="132.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG/medicine.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
